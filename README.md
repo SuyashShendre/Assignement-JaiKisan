@@ -68,4 +68,4 @@ To run this project, you will need to add the variables to your index file
 ## BaseURL = `https://localhost:3000/api` (/customer, /card)
 
 
-## Live Demo = [https://dark-erin-snail-cap.cyclic.app/api] (https://dark-erin-snail-cap.cyclic.app/api/) 
+## Live Demo = [https://dark-erin-snail-cap.cyclic.app/api/](https://dark-erin-snail-cap.cyclic.app/api/)
