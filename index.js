@@ -8,7 +8,7 @@ const app = express();
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/myapp");
+    await mongoose.connect("mongodb://127.0.0.1:27017/jaikisan"); //MONGODB_URL
     console.log("Connected to mongoDB.");
   } catch (error) {
     throw error;
