@@ -63,7 +63,7 @@ export const createCard = async (req, res, next) => {
       customerName: customerName,
       cardNumber: card == null ? 0 : parseInt(card.cardNumber)+1,
     });
-    console.log(newCard)
+    
     const savedCard = await newCard.save();
     res.status(200).json(savedCard);
   } catch (err) {

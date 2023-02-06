@@ -1,14 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
 import customerRoute from "./src/routes/customer.js";
 import cardRoute from "./src/routes/card.js";
 
 const app = express();
+dotenv.config();
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/jaikisan"); //MONGODB_URL
+    await mongoose.connect(process.env.MONGODB_URL);
     console.log("Connected to mongoDB.");
   } catch (error) {
     throw error;
